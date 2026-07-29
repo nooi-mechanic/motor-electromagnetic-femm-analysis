@@ -1,8 +1,17 @@
-# FEMM SPM 모터 생성
+# FEMM MATLAB/Octave Motor Analysis
 
-이 저장소는 FEMM에서 사용할 SPM(Surface Permanent Magnet) 모터 모델을 생성하기 위한 MATLAB/Octave 스크립트를 담고 있습니다.
+이 저장소는 FEMM에서 사용할 SPM 및 V-IPM 모터 모델 생성, 토크 스윕,
+커뮤테이션 검증, 에어갭 민감도 분석용 MATLAB/Octave 스크립트를 담고
+있습니다.
 
-현재 포함된 코드는 해석 결과를 후처리하는 스크립트가 아니라, 모터 형상과 재료, 권선, 경계조건을 정의한 뒤 `.fem` 파일로 저장하는 생성용 스크립트입니다.
+## 디렉토리
+
+- `octave/`: 초기 MATLAB/Octave 호환 모델 생성 및 스윕 코드
+- `matlab/`: Windows VM의 MATLAB/FEMM 해석 소스 스냅샷
+- `docs/`: 해석 기준, 확정 결과 및 원격 MATLAB 운영 인수인계
+
+`matlab/`에는 소스와 설계점 CSV만 보관합니다. 대용량 FEMM 해석 결과,
+로그, 임시 MAT 파일과 데몬 상태 파일은 Git에서 제외합니다.
 
 ## 포함된 파일
 
@@ -58,18 +67,22 @@ run("octave/generate_v_ipm_motor.m")
 - `spm.fem` 저장
 - `v_ipm_motor.fem` 저장
 
-## 아직 포함되지 않은 내용
+## MATLAB/FEMM 해석
 
-- 토크, 자속, 인덕턴스 등의 해석 결과 추출
-- 파라미터 스윕 자동화
-- 민감도 해석용 반복 실행
-- 결과 CSV 저장 및 시각화
+Windows VM의 MATLAB Desktop에서 FEMM을 연동해 실행합니다. 주요 진입점과
+원격 작업 큐 사용법은 `matlab/README.md`와
+`docs/NEXT_STEPS_FEMM_MATLAB.md`를 참고하십시오.
 
 ## 디렉토리 구조
 
 ```text
 .
 ├── README.md
+├── docs
+│   └── NEXT_STEPS_FEMM_MATLAB.md
+├── matlab
+│   ├── README.md
+│   └── *.m
 └── octave
     ├── generate_spm_motor.m
     └── generate_v_ipm_motor.m
