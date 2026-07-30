@@ -1,0 +1,45 @@
+function settings = default_v_ipm_m19_settings_codex()
+% Default shared settings for the current V-IPM commutation study.
+
+settings = struct();
+settings.depth = 150;
+settings.PM = 'N35';
+settings.Core = 'M-19 Steel';
+settings.Coil = '18 AWG';
+settings.Coilname = {'Coil_A', 'Coil_B', 'Coil_C'};
+settings.PM_r = 53 / 2;
+settings.Seal = 5;
+settings.Core_ri = 64 / 2;
+settings.Core_ro = 150 / 2;
+settings.Slot_l = 20;
+settings.turns = 200;
+settings.max_segment = 10;
+settings.Core_angle = 5;
+settings.num_slots = 36;
+settings.Teeth_angle = pi / 66.95;
+settings.Teeth_length = 1;
+settings.Teeth_length2 = 1;
+settings.Arc_offset = 0.01 * pi;
+settings.shaft_r = 8;
+settings.magnet_length = 15;
+settings.magnet_thickness = 4;
+settings.v_angle_deg = 45;
+settings.magnet_center_r = settings.PM_r - 6;
+settings.magnet_center_offset_deg = 20;
+settings.pole_axes_deg = [0, 90, 180, 270];
+settings.pole_pairs = 2;
+settings.rotor_mech_angle_deg = -10;
+settings.use_magnets = true;
+settings.Imax = 0;
+settings.commutation_offset_deg = 0;
+settings.theta_deg_vals = 0:1:359;
+settings.mech_theta_deg_vals = [];
+settings.elec_theta_deg_vals = [];
+settings.run_label = 'sweep';
+settings.current_mode = 'default';
+settings.file_prefix = 'v_ipm';
+settings.partial_mat_name = 'partial.mat';
+settings.final_mat_name = 'result.mat';
+settings.output_dir = fullfile(pwd, 'femm_output_v_ipm_m19');
+settings.keep_femm_files = true;
+end
