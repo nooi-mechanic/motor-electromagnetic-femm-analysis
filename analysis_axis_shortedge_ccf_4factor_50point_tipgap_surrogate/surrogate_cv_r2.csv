@@ -1,0 +1,5 @@
+target,cv_r2
+loaded_torque_mean,0.6299788574188412
+loaded_torque_ripple_pct,0.7543026720057011
+cogging_torque_pkpk,0.48850322621212894
+loaded_force_max,0.6307995457190131

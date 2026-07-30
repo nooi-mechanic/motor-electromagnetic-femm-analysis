@@ -1,0 +1,5 @@
+pair,pareto_count_measured,best_run_on_front
+loaded_torque_mean vs total_magnet_area_mm2,11,311
+loaded_torque_mean vs cogging_torque_pkpk,7,311
+loaded_torque_mean vs loaded_force_max,2,311
+loaded_torque_mean vs loaded_torque_ripple_pct,3,311
