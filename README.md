@@ -4,6 +4,12 @@ pyFEMM과 FEMM 2D 유한요소해석을 이용한 IPM 모터 설계·최적화 �
 설계 의도, DOE 구성, 대리모델 탐색, FEMM 재검증과 물리 해석을 실험별
 리포트로 정리한다.
 
+## Single-layer V-IPM baseline
+
+[싱글레이어 axis-shortedge 기준설계 리포트](reports/single_layer_v_ipm/README.md)는
+4인자 CCF 50점과 DNN 1,000점 후보 탐색으로 더블레이어 비교의 기준선을
+정의한다.
+
 ## Double-layer IPM design study
 
 [![Double-layer IPM rotor geometry](reports/double_layer_ipm/05_inner_angle_ripple_physics/figures/figure_01.png)](reports/double_layer_ipm/README.md)
@@ -23,6 +29,9 @@ pyFEMM과 FEMM 2D 유한요소해석을 이용한 IPM 모터 설계·최적화 �
 
 ```text
 reports/
+├── single_layer_v_ipm/
+│   ├── 01_axis_shortedge_doe/
+│   └── 02_dnn_candidate_search/
 └── double_layer_ipm/
     ├── README.md
     ├── 01_ccf_50point/
