@@ -1,0 +1,13 @@
+{
+  "source": "C:\\Users\\139\\Documents\\pyFEMM 2\\independent_angle_sobol_64_results\\independent_angle_summary.csv",
+  "plan": "C:\\Users\\139\\Documents\\pyFEMM 2\\inner_angle_ripple_physics_experiment\\matched_pair_plan.csv",
+  "current_peak_A": 10.0,
+  "commutation_offset_deg": 35.0,
+  "rotor_initial_angle_deg": -10.0,
+  "theta_start_deg": 0.0,
+  "theta_stop_deg": 28.0,
+  "theta_step_deg": 2.0,
+  "airgap_sample_step_deg": 0.5,
+  "selection_intent": "large inner-angle/ripple difference with matched torque, magnet area, and nuisance variables",
+  "femm_requires_explicit_flag": "--run-femm"
+}
