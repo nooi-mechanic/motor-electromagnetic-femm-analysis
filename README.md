@@ -4,11 +4,20 @@
 커뮤테이션 검증, 에어갭 민감도 분석용 MATLAB/Octave 스크립트를 담고
 있습니다.
 
+## Featured study
+
+### [Double-layer IPM design study](reports/double_layer_ipm/README.md)
+
+pyFEMM으로 더블레이어 IPM을 설계하고 DOE, DNN 대리모델, 실제 FEMM
+재검증, 공극자속 및 Maxwell stress 분석까지 이어 간 실험 보고서입니다.
+각 단계의 핵심 결과, 그림, 실행된 노트북과 요약 데이터를 함께 볼 수 있습니다.
+
 ## 디렉토리
 
 - `octave/`: 초기 MATLAB/Octave 호환 모델 생성 및 스윕 코드
 - `matlab/`: Windows VM의 MATLAB/FEMM 해석 소스 스냅샷
 - `docs/`: 해석 기준, 확정 결과 및 원격 MATLAB 운영 인수인계
+- `reports/double_layer_ipm/`: 더블레이어 IPM pyFEMM 설계·검증 보고서
 
 `matlab/`에는 소스와 설계점 CSV만 보관합니다. 대용량 FEMM 해석 결과,
 로그, 임시 MAT 파일과 데몬 상태 파일은 Git에서 제외합니다.
@@ -83,7 +92,11 @@ Windows VM의 MATLAB Desktop에서 FEMM을 연동해 실행합니다. 주요 진
 ├── matlab
 │   ├── README.md
 │   └── *.m
-└── octave
+├── octave
     ├── generate_spm_motor.m
     └── generate_v_ipm_motor.m
+└── reports
+    └── double_layer_ipm
+        ├── README.md
+        └── 01_ccf_50point ... 05_inner_angle_ripple_physics
 ```
