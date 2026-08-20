@@ -1,0 +1,2 @@
+﻿total_thickness_mm,inner_thickness_mm,outer_thickness_mm,inner_length_mm,outer_length_mm,inner_angle_deg,outer_angle_deg,tip_gap_mm,layer_gap_target_mm,inner_center_radius_mm,outer_center_radius_mm,inner_center_offset_deg,outer_center_offset_deg,magnet_area_ratio_vs_TL,outer_bridge_min_mm,shaft_clearance_min_mm,layer_gap_actual_min_mm,other_magnet_gap_min_mm
+2.5,1.25,1.0,13.0,10.4,32.5,57.5,0.6075381037704741,1.2,17.6,24.641074256026123,12.45625295661739,10.970785346144112,0.82,2.46765005981063,2.5448207977712958,1.2000000000001547,0.6075381040474298
