@@ -67,9 +67,7 @@ reports/
 - 동일한 5 mm 백아이언에서는 Halbach의 토크 이득이 약 1–3.4%지만, 낮은 회전자 요크 자속을 이용하면 더 얇은 백아이언과 낮은 회전자 관성을 검토할 수 있다.
 - 현재 전자기 해석이 제시하는 두께 검토 범위는 **Radial 3.75–4.00 mm**, **Halbach 2.50–2.75 mm**다. 1.6/1.7 T는 절대 합격선이 아니라 설계 참고선이다.
 
-**[Radial–Halbach 종합 노트북 보기 →](reports/radial%20flux%20motor/radial_vs_halbach_comprehensive_report.ipynb)**
-
-**[관련 데이터·모델·스크립트 보기 →](reports/radial%20flux%20motor/README.md)**
+**[Radial flux motor 연구 페이지 보기 →](reports/radial%20flux%20motor/README.md)**
 
 ## Environment and scope
 
